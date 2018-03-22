@@ -1,0 +1,19 @@
+// ==== Spawn External Apps ==== //
+
+int spawn_falconbms()
+{
+  printf("...spawning Falcon BMS 4.33 \xa");
+  system("spawn -w \"C:\\Falcon BMS 4.33 U1\" \"C:\\Falcon BMS 4.33 U1\\Bin\\x64\\Falcon BMS.exe\"");
+}
+
+int spawn_falconbms_launcher()
+{
+  printf("...spawning Falcon BMS 4.33 Launcher \xa");
+  system("spawn -w \"C:\\Falcon BMS 4.33 U1\" \"C:\\Falcon BMS 4.33 U1\\Launcher.exe\"");
+}
+
+int spawn_voiceattack()
+{
+  printf("...spawning VoiceAttack \xa");
+  system("spawn -w \"C:\\VoiceAttack\" \"C:\\VoiceAttack\\VoiceAttack.bat\"");
+}

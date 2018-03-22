@@ -1,0 +1,42 @@
+// ==== Throttle DX mapping ==== //
+
+int throttle_dx_map()
+{
+  printf("...throttle_dx_map start");
+
+  // Slew
+  MapKey(&Throttle, SC, 0); // Disabled.  TrackIR center.
+
+  // Left throttle button
+  MapKey(&Throttle, LTB, DX18); // Uncage
+
+  // Coolie switch
+  MapKey(&Throttle, CSU, DX19); // Antenna Elevation Up
+  MapKey(&Throttle, CSD, DX20); // Antenna Elevation Down
+  MapKey(&Throttle, CSL, DX21); // Man Range Increase
+  MapKey(&Throttle, CSR, DX22); // Man Range Decrease
+
+  // Mic switch
+  MapKey(&Throttle, MSU, DX23); //IFF Out
+  MapKey(&Throttle, MSD, DX24); //IFF In
+  MapKey(&Throttle, MSL, DX25); //UHF
+  MapKey(&Throttle, MSR, DX26); //VHF
+  MapKey(&Throttle, MSP,    0); // Disabled.  VoiceAttack PTT.
+
+  // Speedbrakes
+  MapKey(&Throttle, SPDF, DX27); // Speed brakes retract
+  MapKey(&Throttle, SPDM,    0); // Speed brakes hold
+  MapKey(&Throttle, SPDB, DX28); // Speed brakes extend
+
+  // Boat switch
+  MapKey(&Throttle, BSB, DX29); //DGFT Override
+  MapKey(&Throttle, BSM,    0); //Override Self Cancel
+  MapKey(&Throttle, BSF, DX30); //MRM Override
+
+  // China hat
+  MapKey(&Throttle, CHF, DX31); //Next Steerpoint
+  MapKey(&Throttle, CHM,    0); //Not Used
+  MapKey(&Throttle, CHB, DX32); //Previous Steerpoint
+
+  printf("...throttle_dx_map end");
+}

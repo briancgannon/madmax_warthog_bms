@@ -1,0 +1,45 @@
+// ==== Axis mapping ==== //
+
+// custom func
+int jsx_curve_default, jsy_curve_default; // default
+int jsx_curve_low_sensitivity, jsy_curve_low_sensitivity; // reduced sensitivity for aiming/refueling
+int th_left_curve_default, th_right_curve_default; // 5% idle cutoff, AB deadzone at 65%-75%
+int slider_curve_default; // reduced sensitivity in center
+
+// logical flags
+char jsReduceSensitivityCurve;  //  Flag to invoke reduced joystick sensitivity
+
+
+
+int axis_map()
+{
+  printf("...axis_map start");
+
+  // Joystick
+  MapAxis(&Joystick, JOYX, DX_X_AXIS, AXIS_NORMAL, MAP_ABSOLUTE);
+  SetSCurve(&Joystick, JOYX, 0, 1, 0, 0, 0); // small center deadzone
+
+  MapAxis(&Joystick, JOYY, DX_Y_AXIS, AXIS_NORMAL, MAP_ABSOLUTE);
+  SetSCurve(&Joystick, JOYX, 0, 1, 0, 0, 0); // small center deadzone
+
+  // Throttle - 5% idle cutoff - deadzone at 65%-75% for AB
+  MapAxis(&Throttle, THR_LEFT, DX_ZROT_AXIS, AXIS_NORMAL, MAP_ABSOLUTE);
+  SetCustomCurve(&Throttle, THR_LEFT, LIST(0,5, 65,70, 75,70, 100,100)); // 5% idle cutoff & deadzone at 65%-75%
+
+  MapAxis(&Throttle, THR_RIGHT, DX_Z_AXIS, AXIS_NORMAL, MAP_ABSOLUTE);
+  SetCustomCurve(&Throttle, THR_RIGHT, LIST(0,5, 65,70, 75,70, 100,100)); // 5% idle cutoff & deadzone at 65%-75%
+
+  // Throttle - Idle Cutoff
+  // BMS Configuration Settings/Hardware should have "IDLE OFF" checked
+  MapKey (&Throttle, IDLELON, EXEC("TrimDXAxis(DX_ZROT_AXIS, 90);"));
+  MapKeyR (&Throttle, IDLELON, EXEC("TrimDXAxis(DX_ZROT_AXIS, SET(0));"));
+  
+  MapKey (&Throttle, IDLERON, EXEC("TrimDXAxis(DX_Z_AXIS, 90);"));
+  MapKeyR (&Throttle, IDLERON, EXEC("TrimDXAxis(DX_Z_AXIS, SET(0));"));
+
+  // Throttle Slider Axis - reduction of sensitivity in center
+  MapAxis(&Throttle, THR_FC, DX_SLIDER_AXIS, AXIS_NORMAL, MAP_ABSOLUTE);
+  SetSCurve(&Throttle, THR_FC, 0, 0, 0, 5, 0);
+
+  printf("...axis_map end");
+}

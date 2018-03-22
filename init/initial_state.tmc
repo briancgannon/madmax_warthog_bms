@@ -1,0 +1,35 @@
+// ==== Initial State Configuration ==== //
+
+int set_init_state()
+{
+  printf("...setting initial state \xa");
+  
+  printf("...configuring Warthog joystick & throttle, LMFD and RMFD \xa");
+  // Exclude these devices:
+  Configure(&HCougar, MODE_EXCLUDED);
+  Configure(&T16000, MODE_EXCLUDED);
+  Configure(&TWCSThrottle, MODE_EXCLUDED);
+  Configure(&TFRPRudder, MODE_EXCLUDED);
+  Configure(&T16000L, MODE_EXCLUDED);
+
+  // Don't exclude these devices:
+  // Configure(&LMFD, MODE_EXCLUDED);
+  // Configure(&RMFD, MODE_EXCLUDED);
+  // Configure(&JOYSTICK, MODE_EXCLUDED);
+  // Configure(&THROTTLE, MODE_EXCLUDED);
+
+  // Keyboard settings
+  printf("...setting keyboard rate and layout \xa");
+  SetKBRate(32, 50);
+  SetKBLayout(KB_ENG);
+
+  // Shift modifier 
+  printf("...setting shift button to Joystick paddle - S4 \xa");
+  SetShiftButton(&Joystick, S4); 
+
+  // Set initial backlight state. Intensity 0 - 255
+  printf("...setting throttle backlight \xa");
+  ActKey(PULSE+KEYON+LED(&Throttle, LED_INTENSITY, 45));
+}
+
+

@@ -1,0 +1,31 @@
+// ==== LED and backlight  ==== //
+
+int led_control()
+{
+  printf("...LEDs");
+ 
+  // Init all LED status to "OFF"
+  ActKey(PULSE+KEYON+LED(&Throttle, LED_ONOFF, LED_CURRENT-LED1)); // LED 1 OFF
+  ActKey(PULSE+KEYON+LED(&Throttle, LED_ONOFF, LED_CURRENT-LED2)); // LED 2 OFF
+  ActKey(PULSE+KEYON+LED(&Throttle, LED_ONOFF, LED_CURRENT-LED3)); // LED 3 OFF
+  ActKey(PULSE+KEYON+LED(&Throttle, LED_ONOFF, LED_CURRENT-LED4)); // LED 4 OFF
+  ActKey(PULSE+KEYON+LED(&Throttle, LED_ONOFF, LED_CURRENT-LED5)); // LED 5 OFF
+
+  // LED throttle position indicator; LED 1 - MIL Power; LED 1-5 AB
+  KeyAxis(&Throttle, THR_LEFT, 0, AXMAP2(LIST( 0, 65, 75 ), LED(&Throttle, LED_ONOFF, LED_CURRENT-LED1), 
+      CHAIN( 
+          LED(&Throttle, LED_ONOFF, LED_CURRENT+LED1), D(), 
+          LED(&Throttle, LED_ONOFF, LED_CURRENT-LED2), D(), 
+          LED(&Throttle, LED_ONOFF, LED_CURRENT-LED3), D(), 
+          LED(&Throttle, LED_ONOFF, LED_CURRENT-LED4), D(), 
+          LED(&Throttle, LED_ONOFF, LED_CURRENT-LED5)
+      ), 
+      CHAIN( 
+          LED(&Throttle, LED_ONOFF, LED_CURRENT+LED2), D(), 
+          LED(&Throttle, LED_ONOFF, LED_CURRENT+LED3), D(), 
+          LED(&Throttle, LED_ONOFF, LED_CURRENT+LED4), D(), 
+          LED(&Throttle, LED_ONOFF, LED_CURRENT+LED5)) 
+      ));
+  printf("...led_control end");
+
+}
