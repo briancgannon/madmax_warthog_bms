@@ -19,6 +19,8 @@ int main()
 
     printf("Running madmax_warthog_bms main script... \xa");
 
+    
+
     printf("Controller ready...\xa");
 
     if(log_level > 0) printf("Current logging level: %d)\xa", log_level);
