@@ -6,13 +6,16 @@ include "target.tmh"
 include "util/util_usb.tmh"
 
 // Logging
-int log_level = 0;
+int log_level = 1;
 
 int main()
 {
+
     if(Init(&EventHandle)) return 1; // Declare the event handler, return on error
 
-    printf("Running main script... \xa");
+    printf("Running madmax_warthog_bms debug script... \xa");
+
+    printf("Controller ready...\xa");
 
     log_level = 1;
     if(log_level > 0) printf("Current logging level: %d)\xa", log_level);
