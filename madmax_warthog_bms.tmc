@@ -8,7 +8,6 @@ include "util/util_usb.tmh" // Simpler USB definitions
 // Logging
 int log_level = 0;
 
-// Program start
 int main()
 {
     
@@ -16,10 +15,8 @@ int main()
 
     printf("Running madmax_warthog_bms main script... \xa");
 
-
     printf("Controller ready...\xa");
 
-    log_level = 0;
     if(log_level > 0) printf("Current logging level: %d)\xa", log_level);
 
 }
@@ -29,5 +26,3 @@ int EventHandle(int type, alias o, int x)
     DefaultMapping(&o,x);
     //Event handlers go here
 }
-
-

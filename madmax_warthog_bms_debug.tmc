@@ -17,7 +17,6 @@ int main()
 
     printf("Controller ready...\xa");
 
-    log_level = 1;
     if(log_level > 0) printf("Current logging level: %d)\xa", log_level);
 
 }
