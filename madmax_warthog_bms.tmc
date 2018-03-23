@@ -5,6 +5,10 @@
 include "target.tmh" // Target definitions
 include "util/util_usb.tmh" // Simpler USB definitions
 
+include "axis/axis_map.tmc"
+include "js/js_map.tmc"
+include "th/th_map.tmc"
+
 // Logging
 int log_level = 0;
 
