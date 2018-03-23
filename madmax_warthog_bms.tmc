@@ -15,16 +15,23 @@ include "throttle/throttle_key_map.tmc" // Throttle key mapping
 include "util/debug.tmc" // Debug and logging functions
 include "util/util_usb.tmh" // Simpler USB definitions
 
+// Logging
+int log_level = 0;
 
 // Program start
 int main()
 {
 if(Init(&EventHandle)) return 1; // Declare the event handler, return on error
 
-// do stuff
-set_init_state();
-// spawn_voiceattack();
-// spawn_falconbms_launcher();
+    printf("Running madmax_warthog_bms main script... \xa");
+    set_init_state();
+    // spawn_voiceattack();
+    // spawn_falconbms_launcher();
+
+    printf("...ready\xa");
+
+    log_level = 0;
+    if(log_level > 0) printf("madmax_warthog_bms logging enabled");
 
 }
 
