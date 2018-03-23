@@ -3,6 +3,8 @@
 
 // Includes
 include "target.tmh" // Target definitions
+include "util/util_usb.tmh"
+
 include "app/app_spawn.tmc" // Spawn external apps
 include "axis/axis_map.tmc" // MapAxis config
 include "func/custom_functions.tmc" // Custom functions
@@ -13,18 +15,33 @@ include "throttle/led_control.tmc" // LED and backlight config
 include "throttle/throttle_dx_map.tmc" // Throttle DX mapping
 include "throttle/throttle_key_map.tmc" // Throttle key mapping 
 include "util/debug.tmc" // Debug and logging functions
-include "util/util_usb.tmh" // Simpler USB definitions
+ // Simpler USB definitions
 
+// Logging
+int log_level = 0;
 
 // Program start
 int main()
 {
-if(Init(&EventHandle)) return 1; // Declare the event handler, return on error
+    
+    if(Init(&EventHandle)) return 1; // Declare the event handler, return on error
 
-// do stuff
-set_init_state();
-// spawn_voiceattack();
-// spawn_falconbms_launcher();
+    printf("Running madmax_warthog_bms main script... \xa");
+
+    // set_init_state();
+    // axis_map();
+    // joystick_dx_map();
+    // joystick_key_map();
+    // led_control();
+    // throttle_dx_map();
+    // throttle_key_map();
+    // spawn_voiceattack();
+    // spawn_falconbms_launcher();
+
+    printf("...ready\xa");
+
+    log_level = 0;
+    if(log_level > 0) printf("madmax_warthog_bms logging enabled");
 
 }
 
