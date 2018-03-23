@@ -1,0 +1,42 @@
+// ==== Joystick DX mapping ==== //
+
+int joystick_dx_map()
+{
+  printf("...joystick_dx_map start");
+
+  // Trigger
+  MapKey(&Joystick, TG1, DX1); // Trigger stage 1
+  MapKey(&Joystick, TG2, DX2); // Trigger stage 2
+
+  // Switches
+  MapKey(&Joystick, S1, DX3); // Master mode
+  MapKey(&Joystick, S2, DX4); // Weapon release
+  MapKey(&Joystick, S3, DX5); // Pinky
+  MapKey(&Joystick, S4,   0); // Paddle - Set as Shift modifier
+
+  // Trim POV hat 
+  MapKey(&Joystick, H1U, DXHATUP); // Trim hat up
+  MapKey(&Joystick, H1R, DXHATRIGHT); // Trim hat right
+  MapKey(&Joystick, H1D, DXHATDOWN); // Trim hat down
+  MapKey(&Joystick, H1L, DXHATLEFT); // Trim hat left
+
+  // TMS
+  MapKey(&Joystick, H2U, DX6); // TMS up
+  MapKey(&Joystick, H2R, DX7); // TMS right
+  MapKey(&Joystick, H2D, DX8); // TMS down
+  MapKey(&Joystick, H2L, DX9); // TMS left
+
+  // DMS
+  MapKey(&Joystick, H3U, DX10); // DMS up
+  MapKey(&Joystick, H3R, DX11); // DMS right
+  MapKey(&Joystick, H3D, DX12); // DMS down
+  MapKey(&Joystick, H3L, DX13); // DMS left
+
+  // CMS
+  MapKey(&Joystick, H4U, DX14); // CMS up
+  MapKey(&Joystick, H4R, DX15); // CMS right
+  MapKey(&Joystick, H4D, DX16); // CMS down
+  MapKey(&Joystick, H4L, DX17); // CMS left
+
+  printf("...joystick_dx_map end");
+}

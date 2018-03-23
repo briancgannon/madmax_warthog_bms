@@ -1,0 +1,11 @@
+// ==== Joystick Key mapping ==== //
+
+int joystick_key_map()
+{
+  printf("...joystick_key_map start");
+
+  // CMS
+  MapKey(&Joystick, H4P, PULSE+L_ALT+USB[0X15]); //Trim Reset USB=R
+
+  printf("...joystick_key_map end");
+}
