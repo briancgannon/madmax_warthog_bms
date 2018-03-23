@@ -2,12 +2,12 @@
 // Target script for Thrustmaster Warthog / Falcon BMS 4.33
 
 // Includes
-include "target.tmh" // Target definitions
-include "util/util_usb.tmh" // Simpler USB definitions
-
-include "axis/axis_map.tmc"
+include "target.tmh"
+include "util/util_usb.tmh" 
 include "js/js_map.tmc"
 include "th/th_map.tmc"
+include "axis/axis_map.tmc"
+include "led/led_control.tmc"
 
 // Logging
 int log_level = 0;

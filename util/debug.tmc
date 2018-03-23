@@ -1,7 +1,0 @@
-// ==== Debug Functions ==== //
-
-int debug_logging()
-{
-  printf("...debug logging start");
-  printf("...debug logging end");
-}
