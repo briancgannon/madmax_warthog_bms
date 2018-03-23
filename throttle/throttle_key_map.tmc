@@ -1,73 +1,74 @@
 // ==== Throttle Key mapping ==== //
 
+
 int throttle_key_map()
 {
-  printf("...throttle_key_map start");
+  printf("...throttle_key_map start \xa");
 
   // Pinky switch
   // Forward = Navigation Light: Flash - Anti-Collision: Off
   MapKey(&Throttle, PSB, CHAIN(
-                LOCK+PULSE+L_SHIFT+L_CTL+USB[0x0C],LOCK, //Flash  [USB: I]
+                LOCK+PULSE+L_SHIFT+L_CTL+USB_I,LOCK, //Flash  [USB: I]
                 D(),
-                LOCK+PULSE+L_SHIFT+L_CTL+USB[0x12],LOCK, //Bright  [USB: O]
+                LOCK+PULSE+L_SHIFT+L_CTL+USB_O,LOCK, //Bright  [USB: O]
                 D(),
-                LOCK+PULSE+L_CTL+L_SHIFT+USB[0x18],LOCK, //Anticollision On [USB: U]
+                LOCK+PULSE+L_CTL+L_SHIFT+USB_U,LOCK, //Anticollision On [USB: U]
                 D(),
-                LOCK+PULSE+L_CTL+USB[0x10],LOCK //Master On [USB: M]									
+                LOCK+PULSE+L_CTL+USB_M,LOCK //Master On [USB: M]									
                 ));
 
   // Center = All lights off
-  MapKey(&Throttle, PSM, LOCK+PULSE+L_ALT+USB[0x10],LOCK); // Master off [USB: M]
+  MapKey(&Throttle, PSM, LOCK+PULSE+L_ALT+USB_M,LOCK); // Master off [USB: M]
 
   // AFT = Navigation Light: Steady - Anti-Collision: Off
   MapKey(&Throttle, PSF, CHAIN(
-                LOCK+PULSE+L_SHIFT+USB[0x0C],LOCK, //Steady  [USB: I]
+                LOCK+PULSE+L_SHIFT+USB_I,LOCK, //Steady  [USB: I]
                 D(),
-                LOCK+PULSE+L_SHIFT+L_CTL+USB[0x12],LOCK, //Bright  [USB: O]
+                LOCK+PULSE+L_SHIFT+L_CTL+USB_O,LOCK, //Bright  [USB: O]
                 D(),
-                LOCK+PULSE+L_CTL+L_SHIFT+USB[0x18],LOCK, //Anticollision On [USB: U]
+                LOCK+PULSE+L_CTL+L_SHIFT+USB_U,LOCK, //Anticollision On [USB: U]
                 D(),
-                  LOCK+PULSE+L_CTL+USB[0x10],LOCK //Master On [USB: M]
+                  LOCK+PULSE+L_CTL+USB_M,LOCK //Master On [USB: M]
                               ));
 
   // Flaps (gear)
-  MapKey(&Throttle, FLAPU, PULSE+USB[0x0A]); //Gear Up [USB: G]
-  MapKey(&Throttle, FLAPD, PULSE+L_ALT+L_SHIFT+L_CTL+USB[0x0A]); //Gear Down [USB: G]                         
+  MapKey(&Throttle, FLAPU, PULSE+USB_G); //Gear Up [USB: G]
+  MapKey(&Throttle, FLAPD, PULSE+L_ALT+L_SHIFT+L_CTL+USB_G); //Gear Down [USB: G]                         
 
   // Engine fuel flow left
-  MapKey(&Throttle, EFLNORM, PULSE+L_SHIFT+USB[0x06]); //Cat I  [USB:C]
-  MapKey(&Throttle, EFLOVER, PULSE+L_CTL+L_ALT+L_SHIFT+USB[0x06]); //Cat III  [USB:C]
+  MapKey(&Throttle, EFLNORM, PULSE+L_SHIFT+USB_C); //Cat I  [USB:C]
+  MapKey(&Throttle, EFLOVER, PULSE+L_CTL+L_ALT+L_SHIFT+USB_C); //Cat III  [USB:C]
 
   // Engine fuel flow right
-  MapKey(&Throttle, EFRNORM, PULSE+L_SHIFT+USB[0x10]); //Master Arm On  [USB:M]
-  MapKey(&Throttle, EFROVER, PULSE+L_CTL+L_ALT+L_SHIFT+USB[0x10]); //Master Arm Safe  [USB:M]
+  MapKey(&Throttle, EFRNORM, PULSE+L_SHIFT+USB_M); //Master Arm On  [USB:M]
+  MapKey(&Throttle, EFROVER, PULSE+L_CTL+L_ALT+L_SHIFT+USB_M); //Master Arm Safe  [USB:M]
 
   // Engine operate left & right
-  MapKey(&Throttle, EOLIGN, PULSE+L_CTL+USB[0x06]); //Canopy  [USB:C]
-  MapKey(&Throttle, EORIGN, PULSE+L_SHIFT+USB[0x0D]); //JFS  [USB:J]
+  MapKey(&Throttle, EOLIGN, PULSE+L_CTL+USB_C); //Canopy  [USB:C]
+  MapKey(&Throttle, EORIGN, PULSE+L_SHIFT+USB_J); //JFS  [USB:J]
 
   // APU
-  MapKey(&Throttle, APUON, PULSE+L_ALT+USB[0x0A]); //Alt Gear Down  [USB:G]
-  MapKey(&Throttle, APUOFF, PULSE+L_ALT+USB[0x0A]); //Alt Gear Down  [USB:G]
+  MapKey(&Throttle, APUON, PULSE+L_ALT+USB_G); //Alt Gear Down  [USB:G]
+  MapKey(&Throttle, APUOFF, PULSE+L_ALT+USB_G); //Alt Gear Down  [USB:G]
 
   // Landing Gear
-  MapKey(&Throttle, LDGH, PULSE+L_SHIFT+USB[0x0A]); //Alternate Gear Reset  [USB:G]
+  MapKey(&Throttle, LDGH, PULSE+L_SHIFT+USB_G); //Alternate Gear Reset  [USB:G]
 
   // Autopilot
-  MapKey(&Throttle, APPAT, PULSE+L_SHIFT+USB[0x04]); // Short: Follow HSI heading - Long: Follow HSI & hold pitch  [USB:A]
-  MapKey(&Throttle, APAH, PULSE+L_CTL+L_SHIFT+L_ALT+USB[0x04]);  // Short Hold roll angle and altitude - Long: Hold roll & pitch angle  [USB:A]
-  MapKey(&Throttle, APALT, PULSE+L_SHIFT+USB[0x11]); // Short: Follow Course to Next Waypoint - Long: Follow waypoint & hold pitch  [USB:N]
+  MapKey(&Throttle, APPAT, PULSE+L_SHIFT+USB_A); // Short: Follow HSI heading - Long: Follow HSI & hold pitch  [USB:A]
+  MapKey(&Throttle, APAH, PULSE+L_CTL+L_SHIFT+L_ALT+USB_A);  // Short Hold roll angle and altitude - Long: Hold roll & pitch angle  [USB:A]
+  MapKey(&Throttle, APALT, PULSE+L_SHIFT+USB_N); // Short: Follow Course to Next Waypoint - Long: Follow waypoint & hold pitch  [USB:N]
 
   // Autopilot Engage/Disengage
-  MapKey(&Throttle, APENG, CHAIN(DOWN+L_CTL+USB[0x0D], D(1500), UP+USB[0x0D], D(100), UP+L_CTL)); //Emergency Jettison  [USB:J [USB:J]
+  MapKey(&Throttle, APENG, CHAIN(DOWN+L_CTL+USB_J, D(1500), UP+USB_J, D(100), UP+L_CTL)); //Emergency Jettison  [USB:J [USB:J]
 
   // Radar Altimeter
-  MapKey(&Throttle, RDRNRM, PULSE+L_SHIFT+USB[0x0F]); //Landing Lights On  [USB:L]
-  MapKey(&Throttle, RDRDIS, PULSE+L_ALT+USB[0x0F]); //Landing Lights Off [USB:L]
+  MapKey(&Throttle, RDRNRM, PULSE+L_SHIFT+USB_L); //Landing Lights On  [USB:L]
+  MapKey(&Throttle, RDRDIS, PULSE+L_ALT+USB_L); //Landing Lights Off [USB:L]
 
   // EAC
-  MapKey(&Throttle, EACOFF, PULSE+L_CTL+USB[0x13]); //Brake Off  [USB:P]
-  MapKey(&Throttle, EACON, PULSE+L_ALT+USB[0x13]); //Brake On  [USB:P]
+  MapKey(&Throttle, EACOFF, PULSE+L_CTL+USB_P); //Brake Off  [USB:P]
+  MapKey(&Throttle, EACON, PULSE+L_ALT+USB_P); //Brake On  [USB:P]
 
-  printf("...throttle_key_map end");
+  printf("...throttle_key_map end \xa");
 }

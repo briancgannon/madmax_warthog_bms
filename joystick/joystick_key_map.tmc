@@ -1,4 +1,6 @@
 // ==== Joystick Key mapping ==== //
+include "util/util_usb.tmh"
+
 
 int joystick_key_map()
 {
