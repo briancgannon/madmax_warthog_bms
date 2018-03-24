@@ -2,25 +2,16 @@
 // Target script for Thrustmaster Warthog / Falcon BMS 4.33
 
 // Includes
-include "target.tmh" // Target definitions
-include "util/util_usb.tmh"
-
-include "app/app_spawn.tmc" // Spawn external apps
-include "axis/axis_map.tmc" // MapAxis config
-include "func/custom_functions.tmc" // Custom functions
-include "init/initial_state.tmc" // Set up initial state
-include "joystick/joystick_dx_map.tmc" // Joystick DX mapping
-include "joystick/joystick_key_map.tmc" // Joystick key mapping
-include "throttle/led_control.tmc" // LED and backlight config
-include "throttle/throttle_dx_map.tmc" // Throttle DX mapping
-include "throttle/throttle_key_map.tmc" // Throttle key mapping 
-include "util/debug.tmc" // Debug and logging functions
- // Simpler USB definitions
+include "target.tmh"
+include "util/util_usb.tmh" 
+include "js/js_map.tmc"
+include "th/th_map.tmc"
+include "axis/axis_map.tmc"
+include "led/led_control.tmc"
 
 // Logging
 int log_level = 0;
 
-// Program start
 int main()
 {
     
@@ -28,20 +19,11 @@ int main()
 
     printf("Running madmax_warthog_bms main script... \xa");
 
-    // set_init_state();
-    // axis_map();
-    // joystick_dx_map();
-    // joystick_key_map();
-    // led_control();
-    // throttle_dx_map();
-    // throttle_key_map();
-    // spawn_voiceattack();
-    // spawn_falconbms_launcher();
+    
 
-    printf("...ready\xa");
+    printf("Controller ready...\xa");
 
-    log_level = 0;
-    if(log_level > 0) printf("madmax_warthog_bms logging enabled");
+    if(log_level > 0) printf("Current logging level: %d)\xa", log_level);
 
 }
 
@@ -50,5 +32,3 @@ int EventHandle(int type, alias o, int x)
     DefaultMapping(&o,x);
     //Event handlers go here
 }
-
-
