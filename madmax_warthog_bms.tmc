@@ -20,8 +20,6 @@ include "th/th_MO.tmc"
 include "th/th_MI.tmc"
 include "th/th_map.tmc"
 
-
-
 // Logging
 int log_level = 0;
 
@@ -50,8 +48,7 @@ int main()
     printf("Setting throttle backlight...\xa");
     ActKey(PULSE+KEYON+LED(&Throttle, LED_INTENSITY, 43));
 
-    // Load included scripts
-    
+    // Load included scripts    
     axis_map();
     led_control();
 
@@ -67,8 +64,6 @@ int main()
 
     // spawn_falconbms();
     // spawn_voiceattack();
-
-
 
     printf("Combined Warthog controller ready.\xa");
 
