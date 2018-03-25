@@ -1,13 +1,26 @@
 // madmax_warthog_bms v.01
 // Target script for Thrustmaster Warthog / Falcon BMS 4.33
 
-// Includes
+// Headers
 include "target.tmh"
-include "util/util_usb.tmh" 
-include "js/js_map.tmc"
-include "th/th_map.tmc"
-include "axis/axis_map.tmc"
+include "config/config_usb.tmh"
+
+// Includes
+include "config/app_spawn.tmc"
 include "led/led_control.tmc"
+include "axis/axis_map.tmc"
+
+include "js/js_declare.tmc"
+include "js/js_MO.tmc"
+include "js/js_MI.tmc"
+include "js/js_map.tmc"
+
+include "th/th_declare.tmc"
+include "th/th_MO.tmc"
+include "th/th_MI.tmc"
+include "th/th_map.tmc"
+
+
 
 // Logging
 int log_level = 0;
@@ -18,12 +31,46 @@ int main()
     if(Init(&EventHandle)) return 1; // Declare the event handler, return on error
 
     printf("Running madmax_warthog_bms main script... \xa");
-
-    
-
-    printf("Controller ready...\xa");
-
     if(log_level > 0) printf("Current logging level: %d)\xa", log_level);
+
+    // Exclude these devices
+    Configure(&HCougar, MODE_EXCLUDED);
+    Configure(&T16000, MODE_EXCLUDED);
+    Configure(&TWCSThrottle, MODE_EXCLUDED);
+    Configure(&TFRPRudder, MODE_EXCLUDED);
+    Configure(&T16000L, MODE_EXCLUDED);
+
+    printf("Configuring keyboard...\xa");
+    SetKBRate(32, 50);
+    SetKBLayout(KB_ENG);
+
+    printf("Setting shift keys...\xa");
+    SetShiftButton(&Joystick, S4);
+
+    printf("Setting throttle backlight...\xa");
+    ActKey(PULSE+KEYON+LED(&Throttle, LED_INTENSITY, 43));
+
+    // Load included scripts
+    
+    axis_map();
+    led_control();
+
+    js_declare();
+    js_MO();
+    js_MI();
+    js_map();
+
+    th_declare();
+    th_MO();
+    th_MI();
+    th_map();
+
+    // spawn_falconbms();
+    // spawn_voiceattack();
+
+
+
+    printf("Combined Warthog controller ready.\xa");
 
 }
 
