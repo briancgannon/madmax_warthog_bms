@@ -1,0 +1,37 @@
+// Map the Joystick Middle Out (default) layer
+
+int js_MO()
+{
+    printf("Load js_MO...\xa");
+    
+    TG1_MO = DX1;
+    TG2_MO = DX2;
+
+    S1_MO = DX3;
+    S2_MO = DX4;
+    S3_MO = DX5;
+
+    H1U_MO = DXHATUP;
+    H1R_MO = DXHATRIGHT;
+    H1D_MO = DXHATDOWN;
+    H1L_MO = DHXHATLEFT;
+
+    H2U_MO = DX6;
+    H2R_MO = DX7;
+    H2D_MO = DX8;
+    H2L_MO = DX9;
+
+    H3U_MO = DX10;
+    H3R_MO = DX11;
+    H3D_MO = DX12;
+    H3L_MO = DX13;
+
+    H4U_MO = DX14;
+    H4R_MO = DX15;
+    H4D_MO = DX16;
+    H4L_MO = DX17;
+    H4P_MO = DX18;
+
+    
+    
+}

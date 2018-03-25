@@ -1,1 +1,46 @@
 // Joystick mapping
+
+int js_map()
+{
+    printf("js_map load...\xa");
+
+    // Stick buttons
+    MapKeyIO(&Joystick, TG1, TG1_MI, TG1_MO);
+    MapKeyIO(&Joystick, TG2, TG2_MI, TG2_MO);
+    MapKeyIO(&Joystick,  S1,  S1_MI,  S1_MO);   
+    MapKeyIO(&Joystick,  S2,  S2_MI,  S2_MO);
+    MapKeyIO(&Joystick,  S3,  S3_MI,  S3_MO);
+    // MapKeyIO(&Joystick,  S4,  S4_MI,  S4_MO); // Shift Key    
+
+    // POV hat
+    MapKeyIO(&Joystick, H1U, H1U_MI, H1U_MO);
+    MapKeyIO(&Joystick, H1R, H1R_MI, H1R_MO);
+    MapKeyIO(&Joystick, H1D, H1D_MI, H1D_MO);
+    MapKeyIO(&Joystick, H1L, H1L_MI, H1L_MO);
+
+    // Disable POV hat angles
+    MapKey(&Joystick, H1UR, 0);
+    MapKey(&Joystick, H1DR, 0);
+    MapKey(&Joystick, H1DL, 0);
+    MapKey(&Joystick, H1UL, 0);
+
+    // TMS
+    MapKeyIO(&Joystick, H2U, H2U_MI, H2U_MO);
+    MapKeyIO(&Joystick, H2R, H2R_MI, H2R_MO);
+    MapKeyIO(&Joystick, H2D, H2D_MI, H2D_MO);
+    MapKeyIO(&Joystick, H2L, H2L_MI, H2L_MO);
+    
+    // DMS
+    MapKeyIO(&Joystick, H3U, H3U_MI, H3U_MO);
+    MapKeyIO(&Joystick, H3R, H3R_MI, H3R_MO);
+    MapKeyIO(&Joystick, H3D, H3D_MI, H3D_MO);
+    MapKeyIO(&Joystick, H3L, H3L_MI, H3L_MO);
+
+    // CMS
+    MapKeyIO(&Joystick, H4U, H4U_MI, H4U_MO);
+    MapKeyIO(&Joystick, H4R, H4R_MI, H4R_MO);
+    MapKeyIO(&Joystick, H4D, H4D_MI, H4D_MO);
+    MapKeyIO(&Joystick, H4L, H4L_MI, H4L_MO);
+    MapKeyIO(&Joystick, H4P, H4P_MI, H4P_MO);
+
+}
