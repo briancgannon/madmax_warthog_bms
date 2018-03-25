@@ -1,0 +1,44 @@
+// Initialize null mapping variables for the Middle In(shifted)/Out(default) laye
+int       SC_MI=0; int       SC_MO=0;
+int      MSU_MI=0; int      MSU_MO=0;
+int      MSR_MI=0; int      MSR_MO=0; 
+int     MSD_MI =0; int      MSD_MO=0; 
+int      MSL_MI=0; int      MSL_MO=0; 
+int      MSP_MI=0; int      MSP_MO=0; 
+int     SPDF_MI=0; int     SPDF_MO=0; 
+int     SPDB_MI=0; int     SPDB_MO=0; 
+int      BSF_MI=0; int      BSF_MO=0; 
+int      BSB_MI=0; int      BSB_MO=0; 
+int      CSD_MI=0; int      CSD_MO=0; 
+int      CSL_MI=0; int      CSL_MO=0;
+int      CSR_MI=0; int      CSR_MO=0; 
+int      CSU_MI=0; int      CSU_MO=0; 
+int      CHF_MI=0; int      CHF_MO=0; 
+int      CHB_MI=0; int      CHB_MO=0; 
+int      PSF_MI=0; int      PSF_MO=0; 
+int      PSB_MI=0; int      PSB_MO=0; 
+int      LTB_MI=0; int      LTB_MO=0; 
+int  EFLNORM_MI=0; int  EFLNORM_MO=0; 
+int  EFRNORM_MI=0; int  EFRNORM_MO=0; 
+int EOLMOTOR_MI=0; int EOLMOTOR_MO=0; 
+int EORMOTOR_MI=0; int EORMOTOR_MO=0; 
+int   EOLIGN_MI=0; int   EOLIGN_MO=0; 
+int   EORIGN_MI=0; int   EORIGN_MO=0; 
+int    APUON_MI=0; int    APUON_MO=0; 
+int     LDGH_MI=0; int     LDGH_MO=0; 
+int    FLAPU_MI=0; int    FLAPU_MO=0; 
+int    FLAPD_MI=0; int    FLAPD_MO=0; 
+int    EACON_MI=0; int    EACON_MO=0; 
+int   RDRNRM_MI=0; int   RDRNRM_MO=0; 
+int    APENG_MI=0; int    APENG_MO=0; 
+int    APPAT_MI=0; int    APPAT_MO=0; 
+int    APALT_MI=0; int    APALT_MO=0; 
+int  IDLERON_MI=0; int  IDLERON_MO=0; 
+int  IDLELON_MI=0; int  IDLELON_MO=0;
+
+int th_declare()
+{
+	printf("Load th_declare: ");
+	// no actual code here, just declaring global empty mappings
+}
+

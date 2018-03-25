@@ -1,0 +1,32 @@
+// Initialize null mapping variables for the Middle In(shifted)/Out(default) layers
+
+int TG1_MI=0; int TG1_MO=0;
+int  S2_MI=0; int  S2_MO=0;
+int  S3_MI=0; int  S3_MO=0;
+int  S4_MI=0; int  S4_MO=0;
+int  S1_MI=0; int  S1_MO=0;
+int TG2_MI=0; int TG2_MO=0;
+int H1D_MI=0; int H1D_MO=0;
+int H1L_MI=0; int H1L_MO=0;
+int H1R_MI=0; int H1R_MO=0;
+int H1U_MI=0; int H1U_MO=0;
+int H2D_MI=0; int H2D_MO=0;
+int H2L_MI=0; int H2L_MO=0;
+int H2R_MI=0; int H2R_MO=0;
+int H2U_MI=0; int H2U_MO=0;
+int H3D_MI=0; int H3D_MO=0;
+int H3L_MI=0; int H3L_MO=0;
+int H3R_MI=0; int H3R_MO=0;
+int H3U_MI=0; int H3U_MO=0;
+int H4D_MI=0; int H4D_MO=0;
+int H4L_MI=0; int H4L_MO=0;
+int H4P_MI=0; int H4P_MO=0;
+int H4R_MI=0; int H4R_MO=0;
+int H4U_MI=0; int H4U_MO=0;
+
+int js_declare()
+{
+	printf("Load js_declare...\xa");
+	// no actual code here, just declaring global empty mappings
+}
+
