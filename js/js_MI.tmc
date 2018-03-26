@@ -1,35 +1,35 @@
-// Map the Joystick Middle In (default) layer
+// Map the Joystick Middle In (shifted) layer
 
 int js_MI()
 {
     printf("Load js_MI...\xa");
     
-    TG1_MI = ;
-    TG2_MI = ;
+    TG1_MO = L_ALT+USB_D;
+    TG2_MO = L_ALT+USB_E;
 
-    S1_MI = ;
-    S2_MI = ;
-    S3_MI = ;
+    S1_MO = L_ALT+USB_F;
+    S2_MO = L_ALT+USB_G;
+    S3_MO = L_ALT+USB_H;
 
-    H1U_MI = ;
-    H1R_MI = ;
-    H1D_MI = ;
-    H1L_MI = ;
+    H1U_MO = L_ALT+USB_I;
+    H1R_MO = L_ALT+USB_J;
+    H1D_MO = L_ALT+USB_K;
+    H1L_MO = L_ALT+USB_L;
 
-    H2U_MI = ;
-    H2R_MI = ;
-    H2D_MI = ;
-    H2L_MI = ;
+    H2U_MO = L_ALT+USB_M;
+    H2R_MO = L_ALT+USB_N;
+    H2D_MO = L_ALT+USB_O;
+    H2L_MO = L_ALT+USB_P;
 
-    H3U_MI = ;
-    H3R_MI = ;
-    H3D_MI = ;
-    H3L_MI = ;
+    H3U_MO = L_ALT+USB_Q;
+    H3R_MO = L_ALT+USB_R;
+    H3D_MO = L_ALT+USB_S;
+    H3L_MO = L_ALT+USB_T;
 
-    H4U_MI = ;
-    H4R_MI = ;
-    H4D_MI = ;
-    H4L_MI = ;
-    H4P_MI = ;
+    H4U_MO = L_ALT+USB_U;
+    H4R_MO = L_ALT+USB_V;
+    H4D_MO = L_ALT+USB_W;
+    H4L_MO = L_ALT+USB_X;
+    H4P_MO = L_ALT+USB_Y;
    
 }

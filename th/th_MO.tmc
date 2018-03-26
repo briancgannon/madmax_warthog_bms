@@ -2,60 +2,43 @@
 
 int th_MO();
 {
-    printf("Load th_MO...");
+    printf("Load th_MO...\xa");
 
-    SC_MO = ;
-
-    MSU_MO = ;
-    MSR_MO = ;
-    MSD_MO = ;
-    MSL_MO = ;
-    MSP_MO = ;
-
-    SPDF_MO = ;
-    SPDB_MO = ;
-
-    BSF_MO = ;
-    BSB_MO = ;
-
-    CHF_MO = ;
-    CHB_MO = ;
-
-    CSU_MO = ;
-    CSR_MO = ;
-    CSD_MO = ;
-    CSL_MO = ;
-
-    PSF_MO = ;
-    PSB_MO = ;
-
-    LTB_MO = ;
-
-    EFLNORM_MO = ;
-    EFRNORM_MO = ;
-
-    EOLMOTOR_MO = ;
-    EORMOTOR_MO = ;
-
-    EOLIGN_MO = ;
-    EORIGN_MO = ;
-
-    APUON_MO = ;
-
-    LDGH_MO = ;
-
-    FLAPU_MO = ;
-    FLAPD_MO = ;
-
-    EACON_MO = ;
-
-    RDRNRM_MO = ;
-
-    APENG_MO = ;
-    APPAT_MO = ;
-    APALT_MO = ;
-
-    IDLERON_MO = ;
-    IDLELON_MO = ;
+    // SC_MO = ; // Disabled - Managed by TrackIR 
+    MSU_MO      = DX1;
+    MSR_MO      = DX2;
+    MSD_MO      = DX3;
+    MSL_MO      = DX4;
+    MSP_MO      = DX5;
+    SPDF_MO     = DX6;
+    SPDB_MO     = DX7;
+    BSF_MO      = DX8;
+    BSB_MO      = DX9;
+    CHF_MO      = DX10;
+    CHB_MO      = DX11;
+    CSU_MO      = DX12;
+    CSR_MO      = DX13;
+    CSD_MO      = DX14;
+    CSL_MO      = DX15;
+    PSF_MO      = DX16;
+    PSB_MO      = DX17;
+    LTB_MO      = DX18;
+    EFLNORM_MO  = DX19;
+    EFRNORM_MO  = DX20;
+    EOLMOTOR_MO = DX21;
+    EORMOTOR_MO = DX22;
+    EOLIGN_MO   = DX23;
+    EORIGN_MO   = DX24;
+    APUON_MO    = DX25;
+    LDGH_MO     = DX26;
+    FLAPU_MO    = DX27;
+    FLAPD_MO    = DX28;
+    EACON_MO    = DX29;
+    RDRNRM_MO   = DX30;
+    APENG_MO    = DX31;
+    APPAT_MO    = DX32;
+    APALT_MO    = USB_A;
+    IDLERON_MO  = USB_B;
+    IDLELON_MO  = USB_C;
 
 }

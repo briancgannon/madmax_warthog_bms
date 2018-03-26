@@ -1,61 +1,44 @@
 // Throttle mapping for Middle / Out (default) layer
 
-int th_MI();
+int th_MO();
 {
-    printf("Load th_MI...");
+    printf("Load th_MI...\xa");
 
-    SC_MI = ;
-
-    MSU_MI = ;
-    MSR_MI = ;
-    MSD_MI = ;
-    MSL_MI = ;
-    MSP_MI = ;
-
-    SPDF_MI = ;
-    SPDB_MI = ;
-
-    BSF_MI = ;
-    BSB_MI = ;
-
-    CHF_MI = ;
-    CHB_MI = ;
-
-    CSU_MI = ;
-    CSR_MI = ;
-    CSD_MI = ;
-    CSL_MI = ;
-
-    PSF_MI = ;
-    PSB_MI = ;
-
-    LTB_MI = ;
-
-    EFLNORM_MI = ;
-    EFRNORM_MI = ;
-
-    EOLMITOR_MI = ;
-    EORMITOR_MI = ;
-
-    EOLIGN_MI = ;
-    EORIGN_MI = ;
-
-    APUON_MI = ;
-
-    LDGH_MI = ;
-
-    FLAPU_MI = ;
-    FLAPD_MI = ;
-
-    EACON_MI = ;
-
-    RDRNRM_MI = ;
-
-    APENG_MI = ;
-    APPAT_MI = ;
-    APALT_MI = ;
-
-    IDLERON_MI = ;
-    IDLELON_MI = ;
+    // SC_MO = ; // Disabled - Managed by TrackIR 
+    // MSU_MO      = DX1;
+    // MSR_MO      = DX2;
+    // MSD_MO      = DX3;
+    // MSL_MO      = DX4;
+    // MSP_MO      = DX5;
+    // SPDF_MO     = DX6;
+    // SPDB_MO     = DX7;
+    // BSF_MO      = DX8;
+    // BSB_MO      = DX9;
+    // CHF_MO      = DX10;
+    // CHB_MO      = DX11;
+    // CSU_MO      = DX12;
+    // CSR_MO      = DX13;
+    // CSD_MO      = DX14;
+    // CSL_MO      = DX15;
+    // PSF_MO      = DX16;
+    // PSB_MO      = DX17;
+    // LTB_MO      = DX18;
+    // EFLNORM_MO  = DX19;
+    // EFRNORM_MO  = DX20;
+    // EOLMOTOR_MO = DX21;
+    // EORMOTOR_MO = DX22;
+    // EOLIGN_MO   = DX23;
+    // EORIGN_MO   = DX24;
+    // APUON_MO    = DX25;
+    // LDGH_MO     = DX26;
+    // FLAPU_MO    = DX27;
+    // FLAPD_MO    = DX28;
+    // EACON_MO    = DX29;
+    // RDRNRM_MO   = DX30;
+    // APENG_MO    = DX31;
+    // APPAT_MO    = DX32;
+    // APALT_MO    = USB_A;
+    // IDLERON_MO  = USB_B;
+    // IDLELON_MO  = USB_C;
 
 }

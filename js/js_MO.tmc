@@ -4,32 +4,32 @@ int js_MO()
 {
     printf("Load js_MO...\xa");
     
-    TG1_MO = ;
-    TG2_MO = ;
+    TG1_MO = USB_D;
+    TG2_MO = USB_E;
 
-    S1_MO = ;
-    S2_MO = ;
-    S3_MO = ;
+    S1_MO = USB_F;
+    S2_MO = USB_G;
+    S3_MO = USB_H;
 
-    H1U_MO = ;
-    H1R_MO = ;
-    H1D_MO = ;
-    H1L_MO = ;
+    H1U_MO = USB_I;
+    H1R_MO = USB_J;
+    H1D_MO = USB_K;
+    H1L_MO = USB_L;
 
-    H2U_MO = ;
-    H2R_MO = ;
-    H2D_MO = ;
-    H2L_MO = ;
+    H2U_MO = USB_M;
+    H2R_MO = USB_N;
+    H2D_MO = USB_O;
+    H2L_MO = USB_P;
 
-    H3U_MO = ;
-    H3R_MO = ;
-    H3D_MO = ;
-    H3L_MO = ;
+    H3U_MO = USB_Q;
+    H3R_MO = USB_R;
+    H3D_MO = USB_S;
+    H3L_MO = USB_T;
 
-    H4U_MO = ;
-    H4R_MO = ;
-    H4D_MO = ;
-    H4L_MO = ;
-    H4P_MO = ;
+    H4U_MO = USB_U;
+    H4R_MO = USB_V;
+    H4D_MO = USB_W;
+    H4L_MO = USB_X;
+    H4P_MO = USB_Y;
    
 }
