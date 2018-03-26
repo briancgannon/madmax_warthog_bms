@@ -5,10 +5,10 @@ int js_MO()
     printf("Load js_MO...\xa");
 
     // POV Hat - Slew Control
-    H1U_MO = USB_UPARROW;    // Slew Up
-    H1R_MO = USB_RIGHTARROW; // Slew Right
-    H1D_MO = USB_DOWNARROW;  // Slew Down
-    H1L_MO = USB_LEFTARROW;  // Slew Left
+    H1U_MO = L_ALT+USB_UPARROW;    // Slew Up
+    H1R_MO = L_ALT+USB_RIGHTARROW; // Slew Right
+    H1D_MO = L_ALT+USB_DOWNARROW;  // Slew Down
+    H1L_MO = L_ALT+USB_LEFTARROW;  // Slew Left
     
     // Buttons
     TG1_MO = PULSE+L_ALT+USB_A;    // Trigger stage 1
