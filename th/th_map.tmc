@@ -32,12 +32,6 @@ int th_map()
     MapKeyIO(&Throttle, CSD, CSD_MI, CSD_MO);
     MapKeyIO(&Throttle, CSL, CSL_MI, CSL_MO);
 
-    // Disable Coolie angles 
-    MapKey(&Throttle, CSUR, 0):
-    MapKey(&Throttle, CSDR, 0);
-    MapKey(&Throttle, CSDL, 0);
-    MapKey(&Throttle, CSUL, 0);
-
     // Pinky
     MapKeyIO(&Throttle, PSF, PSF_MI, PSF_MO);
     MapKeyIO(&Throttle, PSB, PSB_MI, PSB_MO);

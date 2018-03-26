@@ -18,12 +18,6 @@ int js_map()
     MapKeyIO(&Joystick, H1D, H1D_MI, H1D_MO);
     MapKeyIO(&Joystick, H1L, H1L_MI, H1L_MO);
 
-    // Disable POV hat angles
-    MapKey(&Joystick, H1UR, 0);
-    MapKey(&Joystick, H1DR, 0);
-    MapKey(&Joystick, H1DL, 0);
-    MapKey(&Joystick, H1UL, 0);
-
     // TMS
     MapKeyIO(&Joystick, H2U, H2U_MI, H2U_MO);
     MapKeyIO(&Joystick, H2R, H2R_MI, H2R_MO);
