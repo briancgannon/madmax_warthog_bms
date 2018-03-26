@@ -11,23 +11,23 @@ int js_MO()
     H1L_MO = USB_LEFTARROW;  // Slew Left
     
     // Buttons
-    TG1_MO = PULSE+USB_A;
-    TG2_MO = PULSE+USB_B;
-    S1_MO  = PULSE+USB_C;
-    S2_MO  = PULSE+USB_D;
-    S3_MO  = PULSE+USB_E;
-    H2U_MO = PULSE+USB_J;
-    H2R_MO = PULSE+USB_K;
-    H2D_MO = PULSE+USB_L;
-    H2L_MO = PULSE+USB_M;
-    H3U_MO = PULSE+USB_N;
-    H3R_MO = PULSE+USB_O;
-    H3D_MO = PULSE+USB_P;
-    H3L_MO = PULSE+USB_Q;
-    H4U_MO = PULSE+USB_R;
-    H4R_MO = PULSE+USB_S;
-    H4D_MO = PULSE+USB_T;
-    H4L_MO = PULSE+USB_U;
-    H4P_MO = PULSE+USB_V; // Trim reset
+    TG1_MO = PULSE+USB_A;    // Trigger stage 1
+    TG2_MO = PULSE+USB_B;    // Trigger stage 2
+    S1_MO  = PULSE+USB_C;    // Master mode
+    S2_MO  = PULSE+USB_D;    // Weapon release
+    S3_MO  = PULSE+USB_E;    // Pinky
+    H2U_MO = PULSE+USB_J;    // TMS up
+    H2R_MO = PULSE+USB_K;    // TMS right
+    H2D_MO = PULSE+USB_L;    // TMS down
+    H2L_MO = PULSE+USB_M;    // TMS left
+    H3U_MO = PULSE+USB_N;    // DMS up
+    H3R_MO = PULSE+USB_O;    // DMS right
+    H3D_MO = PULSE+USB_P;    // DMS down
+    H3L_MO = PULSE+USB_Q;    // DMS left
+    H4U_MO = PULSE+USB_R;    // CMS up
+    H4R_MO = PULSE+USB_S;    // CMS right
+    H4D_MO = PULSE+USB_T;    // CMS down
+    H4L_MO = PULSE+USB_U;    // CMS left
+    H4P_MO = PULSE+USB_V;    // Trim reset
    
 } 
