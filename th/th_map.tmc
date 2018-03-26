@@ -1,1 +1,84 @@
 // Throttle mapping
+
+int th_map()
+{
+    printf("th_map load...\xa");
+
+    // Slew press - disabled 
+    MapKey(&Throttle, SC, 0);
+
+    // Mic
+    MapKeyIO(&Throttle, MSU, MSU_MI, MSU_MO);
+    MapKeyIO(&Throttle, MSR, MSR_MI, MSR_MO);
+    MapKeyIO(&Throttle, MSD, MSD_MI, MSD_MO);
+    MapKeyIO(&Throttle, MSL, MSL_MI, MSL_MO);
+    MapKeyIO(&Throttle, MSP, MSP_MI, MSP_MO);
+
+    // Speedbrake
+    MapKeyIO(&Throttle, SPDF, SPDF_MI, SPDF_MO);
+    MapKeyIO(&Throttle, SPDB, SPDB_MI, SPDB_MO);
+
+    // Boat
+    MapKeyIO(&Throttle, BSF, BSF_MI, BSF_MO);
+    MapKeyIO(&Throttle, BSB, BSB_MI, BSB_MO);
+
+    // China
+    MapKeyIO(&Throttle, CHF, CHF_MI, CHF_MO);
+    MapKeyIO(&Throttle, CHB, CHB_MI, CHB_MO);
+
+    // Coolie
+    MapKeyIO(&Throttle, CSU, CSU_MI, CSU_MO);
+    MapKeyIO(&Throttle, CSR, CSR_MI, CSR_MO);
+    MapKeyIO(&Throttle, CSD, CSD_MI, CSD_MO);
+    MapKeyIO(&Throttle, CSL, CSL_MI, CSL_MO);
+
+    // Disable Coolie angles 
+    MapKey(&Throttle, CSUR, 0):
+    MapKey(&Throttle, CSDR, 0);
+    MapKey(&Throttle, CSDL, 0);
+    MapKey(&Throttle, CSUL, 0);
+
+    // Pinky
+    MapKeyIO(&Throttle, PSF, PSF_MI, PSF_MO);
+    MapKeyIO(&Throttle, PSB, PSB_MI, PSB_MO);
+
+    // Left throttle button
+    MapKeyIO(&Throttle, LTB, LTB_MI, LTB_MO);
+
+    // Engine fuel
+    MapKeyIO(&Throttle, EFLNORM, EFLNORM_MI, EFLNORM_MO);
+    MapKeyIO(&Throttle, EFRNORM, EFRNORM_MI, EFRNORM_MO);
+
+    // EOL motor
+    MapKeyIO(&Throttle, EOLMOTOR, EOLMOTOR_MI, EOLMOTOR_MO);
+    MapKeyIO(&Throttle, EORMOTOR, EORMOTOR_MI, EORMOTOR_MO);
+
+    // EOL ignition
+    MapKeyIO(&Throttle, EOLIGN, EOLIGN_MI, EOLIGN_MO);
+    MapKeyIO(&Throttle, EOLIGN, EOLIGN_MI, EOLIGN_MO);
+
+    // APU
+    MapKeyIO(&Throttle, APUON, APUON_MI, APUON_MO);
+
+    // Landing gear horn
+    MapKeyIO(&Throttle, LDGH, LDGH_MI, LDGH_MO);
+
+    // Flaps
+    MapKeyIO(&Throttle, FLAPU, FLAPU_MI, FLAPU_MO);
+    MapKeyIO(&Throttle, FLAPD, FLAPD_MI, FLAPU_MO);
+    
+    // RDR
+    MapKeyIO(&Throttle, RDRNRM, RDRNRM_MI, RDRNRM_MO);
+
+    // Autopilot
+    MapKeyIO(&Throttle, APENG, APENG_MI, APENG_MO);
+    MapKeyIO(&Throttle, APPAT, APPAT_MI, APPAT_MO);
+    MapKeyIO(&Throttle, APALT, APALT_MI, APALT_MO);
+
+    // Idle
+    MapKeyIO(&Throttle, IDLERON, IDLERON_MI, IDLERON_MO);
+    MapKeyIO(&Throttle, IDLELON, IDLELON_MI, IDLERLON_MO);
+
+
+
+}

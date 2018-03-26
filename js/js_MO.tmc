@@ -4,34 +4,32 @@ int js_MO()
 {
     printf("Load js_MO...\xa");
     
-    TG1_MO = DX1;
-    TG2_MO = DX2;
+    TG1_MO = ;
+    TG2_MO = ;
 
-    S1_MO = DX3;
-    S2_MO = DX4;
-    S3_MO = DX5;
+    S1_MO = ;
+    S2_MO = ;
+    S3_MO = ;
 
-    H1U_MO = DXHATUP;
-    H1R_MO = DXHATRIGHT;
-    H1D_MO = DXHATDOWN;
-    H1L_MO = DHXHATLEFT;
+    H1U_MO = ;
+    H1R_MO = ;
+    H1D_MO = ;
+    H1L_MO = ;
 
-    H2U_MO = DX6;
-    H2R_MO = DX7;
-    H2D_MO = DX8;
-    H2L_MO = DX9;
+    H2U_MO = ;
+    H2R_MO = ;
+    H2D_MO = ;
+    H2L_MO = ;
 
-    H3U_MO = DX10;
-    H3R_MO = DX11;
-    H3D_MO = DX12;
-    H3L_MO = DX13;
+    H3U_MO = ;
+    H3R_MO = ;
+    H3D_MO = ;
+    H3L_MO = ;
 
-    H4U_MO = DX14;
-    H4R_MO = DX15;
-    H4D_MO = DX16;
-    H4L_MO = DX17;
-    H4P_MO = DX18;
-
-    
-    
+    H4U_MO = ;
+    H4R_MO = ;
+    H4D_MO = ;
+    H4L_MO = ;
+    H4P_MO = ;
+   
 }

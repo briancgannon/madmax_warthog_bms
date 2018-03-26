@@ -1,0 +1,35 @@
+// Map the Joystick Middle In (default) layer
+
+int js_MI()
+{
+    printf("Load js_MI...\xa");
+    
+    TG1_MI = ;
+    TG2_MI = ;
+
+    S1_MI = ;
+    S2_MI = ;
+    S3_MI = ;
+
+    H1U_MI = ;
+    H1R_MI = ;
+    H1D_MI = ;
+    H1L_MI = ;
+
+    H2U_MI = ;
+    H2R_MI = ;
+    H2D_MI = ;
+    H2L_MI = ;
+
+    H3U_MI = ;
+    H3R_MI = ;
+    H3D_MI = ;
+    H3L_MI = ;
+
+    H4U_MI = ;
+    H4R_MI = ;
+    H4D_MI = ;
+    H4L_MI = ;
+    H4P_MI = ;
+   
+}

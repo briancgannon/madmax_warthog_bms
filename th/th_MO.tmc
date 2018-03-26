@@ -1,0 +1,61 @@
+// Throttle mapping for Middle / Out (default) layer
+
+int th_MO();
+{
+    printf("Load th_MO...");
+
+    SC_MO = ;
+
+    MSU_MO = ;
+    MSR_MO = ;
+    MSD_MO = ;
+    MSL_MO = ;
+    MSP_MO = ;
+
+    SPDF_MO = ;
+    SPDB_MO = ;
+
+    BSF_MO = ;
+    BSB_MO = ;
+
+    CHF_MO = ;
+    CHB_MO = ;
+
+    CSU_MO = ;
+    CSR_MO = ;
+    CSD_MO = ;
+    CSL_MO = ;
+
+    PSF_MO = ;
+    PSB_MO = ;
+
+    LTB_MO = ;
+
+    EFLNORM_MO = ;
+    EFRNORM_MO = ;
+
+    EOLMOTOR_MO = ;
+    EORMOTOR_MO = ;
+
+    EOLIGN_MO = ;
+    EORIGN_MO = ;
+
+    APUON_MO = ;
+
+    LDGH_MO = ;
+
+    FLAPU_MO = ;
+    FLAPD_MO = ;
+
+    EACON_MO = ;
+
+    RDRNRM_MO = ;
+
+    APENG_MO = ;
+    APPAT_MO = ;
+    APALT_MO = ;
+
+    IDLERON_MO = ;
+    IDLELON_MO = ;
+
+}
