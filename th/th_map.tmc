@@ -12,7 +12,7 @@ int th_map()
     MapKeyIO(&Throttle, MSR, MSR_MI, MSR_MO);
     MapKeyIO(&Throttle, MSD, MSD_MI, MSD_MO);
     MapKeyIO(&Throttle, MSL, MSL_MI, MSL_MO);
-    MapKeyIO(&Throttle, MSP, MSP_MI, MSP_MO);
+    MapKey(&Throttle, MSP, 0); // Disabled.  External radio PTT. 
 
     // Speedbrake
     MapKeyIO(&Throttle, SPDF, SPDF_MI, SPDF_MO);

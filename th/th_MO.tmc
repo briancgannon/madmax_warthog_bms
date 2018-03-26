@@ -9,7 +9,7 @@ int th_MO()
     MSR_MO      = DX2;
     MSD_MO      = DX3;
     MSL_MO      = DX4;
-    MSP_MO      = DX5;
+    // MSP_MO      = DX5;
     SPDF_MO     = DX6;
     SPDB_MO     = DX7;
     BSF_MO      = DX8;
