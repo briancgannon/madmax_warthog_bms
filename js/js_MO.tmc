@@ -11,23 +11,23 @@ int js_MO()
     H1L_MO = USB_LEFTARROW;  // Slew Left
     
     // Buttons
-    TG1_MO = USB_A;
-    TG2_MO = USB_B;
-    S1_MO  = USB_C;
-    S2_MO  = USB_D;
-    S3_MO  = USB_E;
-    H2U_MO = USB_J;
-    H2R_MO = USB_K;
-    H2D_MO = USB_L;
-    H2L_MO = USB_M;
-    H3U_MO = USB_N;
-    H3R_MO = USB_O;
-    H3D_MO = USB_P;
-    H3L_MO = USB_Q;
-    H4U_MO = USB_R;
-    H4R_MO = USB_S;
-    H4D_MO = USB_T;
-    H4L_MO = USB_U;
-    H4P_MO = USB_V;
+    TG1_MO = PULSE+USB_A;
+    TG2_MO = PULSE+USB_B;
+    S1_MO  = PULSE+USB_C;
+    S2_MO  = PULSE+USB_D;
+    S3_MO  = PULSE+USB_E;
+    H2U_MO = PULSE+USB_J;
+    H2R_MO = PULSE+USB_K;
+    H2D_MO = PULSE+USB_L;
+    H2L_MO = PULSE+USB_M;
+    H3U_MO = PULSE+USB_N;
+    H3R_MO = PULSE+USB_O;
+    H3D_MO = PULSE+USB_P;
+    H3L_MO = PULSE+USB_Q;
+    H4U_MO = PULSE+USB_R;
+    H4R_MO = PULSE+USB_S;
+    H4D_MO = PULSE+USB_T;
+    H4L_MO = PULSE+USB_U;
+    H4P_MO = PULSE+USB_V; // Trim reset
    
 } 
