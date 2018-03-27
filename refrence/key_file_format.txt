@@ -1,0 +1,22 @@
+Keyboard Format
+===============
+[CALLBACK] [SOUND_ID] [NOT_USED] [KEY] [MODIFIER_KEY] [KEY_COMBO_KEY] [KEY_COMBO_MODIFIER] [UI_VISIBLE] [UI_DESCRIPTION]
+
+example:  AFGearToggle -1 0 0X22 0 0 0 1 "GEAR: LG Handle - Toggle"
+
+
+DX Buttons
+==========
+[CALLBACK] [DX_BUTTON] [CALLBACK_INVOKE] [DX_ID] [DX_PRESS] [NOT_USED] [SOUND_ID (opt)] [UI_DESCRIPTION (opt)]
+
+example:  SimTriggerFirstDetent 0 -1 -2 0 0x0 0v “DX: STICK – Trigger 1st Detent”
+
+
+
+DX POV Hat Buttons
+==================
+[CALLBACK] [POV_HAT_NUM] [NOT_USED] [POV_HAT_ID] [PAN_DIRECTION] [NOT_USED] [SOUND_ID (opt)] [UI_DESCRIPTION (opt)] 
+
+example:  AFElevatorTrimUp 0 -1 -3 0 0x0 0  “DX: Trim Elevator Up”
+
+
