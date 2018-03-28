@@ -2,7 +2,7 @@
 
 int th_map()
 {
-    printf("th_map load...\xa");
+    printf("Load th_map.tmc...\xa");
 
     // Slew press - disabled 
     MapKey(&Throttle, SC, 0);

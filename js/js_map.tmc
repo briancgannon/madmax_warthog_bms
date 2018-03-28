@@ -2,7 +2,7 @@
 
 int js_map()
 {
-    printf("js_map load...\xa");
+    printf("Load js_map.tmc...\xa");
 
     // Stick buttons
     MapKeyIO(&Joystick, TG1, TG1_MI, TG1_MO);

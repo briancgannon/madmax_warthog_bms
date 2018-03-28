@@ -38,7 +38,7 @@ int  IDLELON_MI=0; int  IDLELON_MO=0;
 
 int th_declare()
 {
-	printf("Load th_declare...\xa");
+	printf("Load th_declare.tmc...\xa");
 	// no actual code here, just declaring global empty mappings
 }
 

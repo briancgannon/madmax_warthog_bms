@@ -2,7 +2,7 @@
 
 int th_MI()
 {
-    printf("Load th_MI...\xa");
+    printf("Load th_MI.tmc...\xa");
 
     // SC_MI = ; // Disabled - Managed by TrackIR 
     // MSU_MI      = DX1;
