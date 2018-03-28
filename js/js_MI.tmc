@@ -2,7 +2,7 @@
 
 int js_MI()
 {
-    printf("Load js_MI...\xa");
+    printf("Load js_MI.tmc...\xa");
 
     // POV Hat (Shifted) - Trim Control
     H1U_MI = L_SHIFT+L_CTL+L_ALT+USB_UPARROW;    // Trim Up

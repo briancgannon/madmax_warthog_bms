@@ -26,7 +26,7 @@ int H4U_MI=0; int H4U_MO=0;
 
 int js_declare()
 {
-	printf("Load js_declare...\xa");
+	printf("Load js_declare.tmc...\xa");
 	// no actual code here, just declaring global empty mappings
 }
 

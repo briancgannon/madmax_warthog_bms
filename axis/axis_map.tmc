@@ -13,7 +13,7 @@ char jsReduceSensitivityCurve;  //  Flag to invoke reduced joystick sensitivity
 
 int axis_map()
 {
-  printf("...axis_map start");
+  printf("Load axis_map.tmc...");
 
   jsx_curve_default = LIST(0, 1, 0, 0, 0);
   jsy_curve_default = LIST(0, 1, 0, 0, 0);
@@ -49,5 +49,4 @@ int axis_map()
   MapAxis(&Throttle, THR_FC, DX_SLIDER_AXIS, AXIS_NORMAL, MAP_ABSOLUTE);
   SetSCurve(&Throttle, THR_FC, slider_curve_default);
 
-  printf("...axis_map end");
 }
