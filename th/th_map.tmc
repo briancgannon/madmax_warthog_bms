@@ -49,7 +49,7 @@ int th_map()
 
     // EOL ignition
     MapKeyIO(&Throttle, EOLIGN, EOLIGN_MI, EOLIGN_MO);
-    MapKeyIO(&Throttle, EOLIGN, EOLIGN_MI, EOLIGN_MO);
+    MapKeyIO(&Throttle, EORIGN, EORIGN_MI, EORIGN_MO);
 
     // APU
     MapKeyIO(&Throttle, APUON, APUON_MI, APUON_MO);
@@ -69,9 +69,12 @@ int th_map()
     MapKeyIO(&Throttle, APPAT, APPAT_MI, APPAT_MO);
     MapKeyIO(&Throttle, APALT, APALT_MI, APALT_MO);
 
+    // EAC
+    MapKeyIO(&Throttle, EACON, EACON_MI, EACON_MO);
+
     // Idle
     MapKeyIO(&Throttle, IDLERON, IDLERON_MI, IDLERON_MO);
-    MapKeyIO(&Throttle, IDLELON, IDLELON_MI, IDLERLON_MO);
+    MapKeyIO(&Throttle, IDLELON, IDLELON_MI, IDLELON_MO);
 
 
 
